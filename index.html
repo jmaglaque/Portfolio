@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jay-R Dizon Maglaque | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Jay-R Dizon Maglaque — UI/UX Designer &amp; IT Student building modern web applications, health portals, and information systems.">
+  <meta name="author" content="Jay-R Dizon Maglaque">
+  <link rel="icon" type="image/png" href="Personal/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved) {
+          document.documentElement.setAttribute('data-theme', saved);
+          const fav = document.querySelector('link[rel="icon"]');
+          if (fav) fav.href = saved === 'light' ? 'Personal/icon2.png' : 'Personal/icon.png';
+        }
+      } catch (e) { }
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+
+<body>
+  <div class="ambient-glow glow-1" id="glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" id="glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" id="glow-3" aria-hidden="true"></div>
+  <div class="progress" id="pg"></div>
+
+  <header>
+    <div class="wrap">
+      <nav>
+        <a href="#top" class="nav-brand">
+          <img src="Personal/icon.png" alt="Jay-R Maglaque Logo" class="nav-logo logo-dark">
+          <img src="Personal/icon2.png" alt="Jay-R Maglaque Logo" class="nav-logo logo-light">
+        </a>
+        <div class="nav-actions">
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+          </ul>
+          <button id="theme-btn" class="theme-btn" type="button" aria-label="Toggle dark/light mode"
+            title="Toggle dark / light mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button id="burger-btn" class="burger-btn" type="button" aria-label="Toggle navigation menu"
+            aria-expanded="false" aria-controls="nav-menu">
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+            <span class="burger-bar"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="hero" id="top">
+      <div class="txt">
+        <h1>Hi, I'm Jay-R</h1>
+        <div class="role" aria-live="off">I'm a <em id="typed">UI/UX Designer</em></div>
+        <p>BSIT student at NEUST who enjoys learning, building, and exploring different areas of technology.</p>
+        <div class="social" style="margin-top:24px">
+          <a href="https://www.facebook.com/wawayut35" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+          </a>
+          <a href="https://github.com/jmaglaque" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/jay-r-maglaque-7a7372440/" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" />
+            </svg>
+          </a>
+        </div>
+        <div class="hero-actions">
+          <a class="pill pill-primary" href="mailto:maglaquejayr091535@gmail.com" title="Send email to Jay-R">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>
+            <span>Contact me</span>
+          </a>
+          <a class="pill pill-secondary" href="Personal/Resume Dizon.pdf" download="Resume Dizon.pdf" id="cv-btn"
+            title="Download Resume (PDF)" target="_blank">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>View Resume</span>
+          </a>
+        </div>
+      </div>
+      <div class="arch">
+        <svg class="abs" viewBox="0 0 480 500" aria-hidden="true">
+          <path class="a1" d="M70 120C60 50 150 10 240 30s190 40 200 140-20 150-70 220-130 90-210 60S80 290 70 120z" />
+          <path class="a2" d="M10 300C0 230 60 190 120 210s90 70 70 140-90 110-150 70S18 360 10 300z" />
+          <rect class="a2" x="330" y="30" width="110" height="110" rx="28" transform="rotate(18 385 85)" />
+          <path class="ln" d="M20 90q35-40 70 0t70 0t70 0" />
+          <path class="ln" d="M300 440q35-40 70 0t70 0" />
+          <path class="ln" d="M395 190a110 110 0 0 1-60 150" />
+          <path class="ln" d="M418 200a135 135 0 0 1-72 185" />
+          <g class="a3">
+            <circle cx="60" cy="170" r="5" />
+            <circle cx="86" cy="170" r="5" />
+            <circle cx="112" cy="170" r="5" />
+            <circle cx="60" cy="196" r="5" />
+            <circle cx="86" cy="196" r="5" />
+            <circle cx="112" cy="196" r="5" />
+          </g>
+          <circle class="a3" cx="430" cy="300" r="7" />
+          <circle class="a3" cx="150" cy="22" r="5" />
+        </svg>
+        <img src="Personal/jayr.png" alt="Portrait of Jay-R Dizon Maglaque">
+      </div>
+    </div>
+  </div>
+
+  <main class="wrap narrow">
+    <section id="about">
+      <h2 class="rv">About</h2>
+      <p class="rv">I’m Jay-R Dizon Maglaque, a Bachelor of Science in Information Technology in Web System Technology
+        student
+        at Nueva Ecija University of Science and Technology - Sumacab Campus.</p>
+      <p class="rv" style="--d:.12s">
+        Interested in technology and enjoy learning about different areas of IT through school projects and personal
+        experience. I’m currently looking for an OJT opportunity where I can gain practical experience, learn from
+        professionals, and apply what I’ve learned in school. I’m willing to learn new things, improve my skills, and do
+        my best to contribute to the team.</p>
+    </section>
+
+    <section id="projects">
+      <div class="section-header rv">
+        <div>
+          <h2>Projects</h2>
+          <p class="section-sub">Showcase of web apps, information systems, and design concepts I've built.</p>
+        </div>
+      </div>
+
+      <div class="cards" id="project-grid">
+        <!-- Campus Care -->
+        <article class="card rv" data-category="system web" data-id="campus-care" style="--d:0.0s">
+          <div class="thumb">
+            <img src="Project/CampusCare.png" alt="Campus Care Project Preview" loading="lazy">
+          </div>
+          <div class="cbody">
+            <h3>Campus Care</h3>
+            <p class="desc">A school clinic and healthcare management system for logging student medical consultations,
+              digital health profiles, and inventory tracking for clinic staff.</p>
+            <div class="card-tech">
+              <span class="tech-pill"><i class="tp-dot"></i>Next.js</span>
+              <span class="tech-pill"><i class="tp-dot"></i>React</span>
+              <span class="tech-pill"><i class="tp-dot"></i>Tailwind</span>
+              <span class="tech-pill"><i class="tp-dot"></i>Full-Stack</span>
+            </div>
+            <div class="card-action">
+              <a href="https://campus-care-five-phi.vercel.app/login" target="_blank" rel="noopener noreferrer"
+                class="btn-proj btn-proj-primary" title="View Campus Care Project">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>View Project</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Citilife -->
+        <article class="card rv" data-category="system uiux web" data-id="citilife" style="--d:0.08s">
+          <div class="thumb">
+            <img src="Project/Citilife.png" alt="Citilife Project Preview" loading="lazy">
+          </div>
+          <div class="cbody">
+            <h3>Citilife</h3>
+            <p class="desc">A centralized healthcare portal connecting patients to diagnostic centers. Provides secure,
+              real-time access to digital radiology results, diagnostic reports, and medical histories while optimizing
+              clinic dispatch workflows.</p>
+            <div class="card-tech">
+              <span class="tech-pill"><i class="tp-dot"></i>PHP</span>
+              <span class="tech-pill"><i class="tp-dot"></i>Tailwind</span>
+              <span class="tech-pill"><i class="tp-dot"></i>MySQL</span>
+            </div>
+            <div class="card-action">
+              <a href="https://citilife-system-production-a5e9.up.railway.app/" target="_blank"
+                rel="noopener noreferrer" class="btn-proj btn-proj-primary" title="View Citilife Project">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>View Project</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mouse and Mates -->
+        <article class="card rv" data-category="uiux web" data-id="mouse-mates" style="--d:0.16s">
+          <div class="thumb">
+            <img src="Project/MouseAndMates.png" alt="Mouse and Mates Project Preview" loading="lazy">
+          </div>
+          <div class="cbody">
+            <h3>Mouse and Mates</h3>
+            <p class="desc">A tech discovery platform that simplifies laptop specifications into clear insights.
+              Features an intelligent recommendation engine delivering tailored suggestions to help users find the right
+              device for their budget and workflow.</p>
+            <div class="card-tech">
+              <span class="tech-pill"><i class="tp-dot"></i>HTML</span>
+              <span class="tech-pill"><i class="tp-dot"></i>CSS</span>
+              <span class="tech-pill"><i class="tp-dot"></i>JavaScript</span>
+            </div>
+            <div class="card-action">
+              <a href="https://mouse-and-mates-s-uvog.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="btn-proj btn-proj-primary" title="View Mouse and Mates Project">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>View Project</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Harvest Hotel -->
+        <article class="card rv" data-category="system web" data-id="harvest-hotel" style="--d:0.24s">
+          <div class="thumb">
+            <img src="Project/HarvestHotel.png" alt="Harvest Hotel Project Preview" loading="lazy">
+          </div>
+          <div class="cbody">
+            <h3>Harvest Hotel</h3>
+            <p class="desc">A cross-platform hospitality and reservation platform built with the Ionic Framework.
+              Features real-time room availability, event venue scheduling, and an authenticated guest dashboard with
+              booking history tracking.</p>
+            <div class="card-tech">
+              <span class="tech-pill"><i class="tp-dot"></i>Ionic Angular</span>
+              <span class="tech-pill"><i class="tp-dot"></i>MySQL</span>
+            </div>
+            <div class="card-action">
+              <a href="https://harvest-hotel.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="btn-proj btn-proj-primary" title="View Harvest Hotel Project">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>View Project</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- E-Ready -->
+        <article class="card rv" data-category="system web" data-id="eready" style="--d:0.32s">
+          <div class="thumb">
+            <img src="Project/EReady.png" alt="E-Ready Project Preview" loading="lazy">
+          </div>
+          <div class="cbody">
+            <h3>E-Ready</h3>
+            <p class="desc">A community disaster preparedness and emergency response portal offering real-time weather
+              advisories, emergency hotline speed-dials, and safety guides.</p>
+            <div class="card-tech">
+              <span class="tech-pill"><i class="tp-dot"></i>JavaScript</span>
+              <span class="tech-pill"><i class="tp-dot"></i>HTML5</span>
+              <span class="tech-pill"><i class="tp-dot"></i>CSS3</span>
+              <span class="tech-pill"><i class="tp-dot"></i>REST API</span>
+            </div>
+            <div class="card-action">
+              <a href="https://eready-silk.vercel.app/login" target="_blank" rel="noopener noreferrer"
+                class="btn-proj btn-proj-primary" title="View E-Ready Project">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                <span>View Project</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-header rv">
+        <div>
+          <h2>Skills &amp; Expertise</h2>
+          <p class="section-sub">Areas of focus, technical stack, and software proficiencies.</p>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="sk rv" style="--d:0.00s">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 19l7-7 3 3-7 7-3-3z" />
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" />
+              <path d="M2 2l7.6 7.6" />
+              <circle cx="11" cy="11" r="2" />
+            </svg>
+          </div>
+          <h3>Design &amp; Development</h3>
+          <ul class="skill-badges">
+            <li><span class="badge-icon">🎨</span> UI/UX &amp; Interaction Design</li>
+            <li><span class="badge-icon">📱</span> Mobile App Development</li>
+            <li><span class="badge-icon">⚙️</span> System Analysis &amp; Design</li>
+          </ul>
+        </div>
+
+        <div class="sk rv" style="--d:0.12s">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <ellipse cx="12" cy="5" rx="9" ry="3" />
+              <path d="M21 12c0 1.7-4 3-9 3s-9-1.3-9-3" />
+              <path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5" />
+            </svg>
+          </div>
+          <h3>Data &amp; Deployment</h3>
+          <ul class="skill-badges">
+            <li><span class="badge-icon">🗄️</span> Database Management</li>
+            <li><span class="badge-icon">☁️</span> Hosting &amp; Deployment</li>
+            <li><span class="badge-icon">🐙</span> Version Control / Git</li>
+          </ul>
+        </div>
+
+        <div class="sk rv" style="--d:0.24s">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.900a2.100 2.100 0 0 1-3-3l6.900-6.900a6 6 0 0 1 7.900-7.900z" />
+            </svg>
+          </div>
+          <h3>Support &amp; Workflow</h3>
+          <ul class="skill-badges">
+            <li><span class="badge-icon">🛠️</span> Troubleshooting &amp; Technical Support</li>
+            <li><span class="badge-icon">💻</span> OS &amp; Software Configuration</li>
+            <li><span class="badge-icon">🤖</span> AI-Assisted Workflows</li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Quick Top Floating Action Button -->
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
